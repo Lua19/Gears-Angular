@@ -1,0 +1,20 @@
+<form #UpdateForm="ngForm" (ngSubmit)="UpdateGun(UpdateForm)">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{arma.gunImage}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">New gun name</h5>
+          <input type="text" name="GunName" placeholder="{{arma.gunName}}" ngModel required [value]="arma.gunName">
+          <p class="card-text">New description</p>
+          <input type="text"name="GunDesc" ngModel placeholder="{{arma.gunDesc}}" required [value]="arma.gunDesc">
+          <p>Update gun damage</p>
+          <input type="number" name="GunDamage" ngModel placeholder="{{arma.gunDamage}}" required [value]="arma.gunDamage">
+          <p>Updated gun shots</p>
+          <input type="number" name="GunShots" ngModel placeholder="{{arma.gunShots}}" required [value]="arma.gunShots"> 
+          <p>Gun Image URL</p>
+          <input type="text" name="GunImage" ngModel placeholder="{{arma.gunImage}}" required [value]="arma.gunImage">
+          <br>
+          <br>
+          <button type="submit" value="submit">Submit</button>
+        </div>
+      </div>
+    </form>

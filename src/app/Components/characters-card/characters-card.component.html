@@ -1,0 +1,35 @@
+
+<ul>
+    <li *ngFor="let character of characters; let i = index "id="item">
+    <div class="card" style="width: 18rem;" routerLink="{{characters[i].characterID}}" >
+        <div class="card-img-body">
+            <img class="card-img-top" src="{{characters[i].characterImage}}" alt="Card image cap">
+        </div>
+        <div class="card-body">
+        <h5 class="card-title">{{characters[i].characterName}}</h5>
+        <p class="card-text">{{characters[i].characterDesc}}</p>
+        <span>Age: {{characters[i].characterAge}} </span>  <button id="DeleteButton" (click)="delete(characters[i].characterID)">Delete <svg  routerLink="" (click)="delete(characters[i].characterID)" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="24" height="24"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" 
+            stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path 
+            d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M33.73372,23.59961l-10.13411,10.13411l52.26628,52.26628l-52.26628,52.26628l10.13411,
+                10.13411l52.26628,-52.26628l52.26628,52.26628l10.13411,-10.13411l-52.26628,-52.26628l52.26628,-52.26628l-10.13411,-10.13411l-52.26628,52.26628z">
+            </path></g></g></svg></button>  
+        </div>
+    </div>
+    </li>
+
+    <li routerLink="new" id="newitem">
+        <div class="card" style="width: 18rem;" >
+            <div class="card-img-body">
+                <img src="https://img.icons8.com/ios/100/fa314a/add-link.png" alt="">
+        </div>
+            <div class="card-body">
+            <h5 class="card-title">Add a new character</h5>
+            <p class="card-text">Character description</p>
+            <span>Age: ???  </span>
+            </div>
+        </div>
+        </li>
+</ul>

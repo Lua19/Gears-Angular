@@ -1,0 +1,20 @@
+<form #GunForm="ngForm" (ngSubmit)="conseguirArma(GunForm)">
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="https://styles.redditmedia.com/t5_2ruzg/styles/communityIcon_2s67j0ganzi71.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Gun Name</h5>
+      <input type="text" name="GunName" placeholder="Gun Name" ngModel>
+      <p class="card-text">Description</p>
+      <input type="text"name="GunDesc" ngModel placeholder="Some quick example text to build on the card title and make up the bulk of the card's content.">
+      <p>Gun Damage</p>
+      <input type="number" name="GunDamage" ngModel placeholder="50">
+      <p>Gun Shots</p>
+      <input type="number" name="GunShots" ngModel placeholder="20">
+      <p>Gun Image URL</p>
+      <input type="text" name="GunImage" ngModel placeholder="https://styles.redditmedia.com/t5_2ruzg/styles/communityIcon_2s67j0ganzi71.jpg">
+      <br>
+      <br>
+      <button type="submit" value="submit">Submit</button>
+    </div>
+  </div>
+</form>

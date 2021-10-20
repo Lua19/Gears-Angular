@@ -1,0 +1,18 @@
+.card{
+    background-color: rgb(0, 0, 0);
+    border-color: white;
+    border-width: 5px;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 20px;
+    color: white;
+    margin-top: 85px;
+}
+.btn{
+    background-color: rgb(189, 0, 0);
+    border-color: white;
+    border-width: 5px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 20px;
+}

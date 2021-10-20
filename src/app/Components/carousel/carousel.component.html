@@ -1,0 +1,29 @@
+<ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" class="mt-5">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[0]" alt="Random first slide" class="img-thumbnail embed-responsive-4by3">
+      </div>
+      <div class="carousel-caption">
+        <h3>An exciting campaign</h3>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[1]" alt="Random second slide" class="img-thumbnail embed-responsive-4by3">
+      </div>
+      <div class="carousel-caption">
+        <h3>Survival mode</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[2]" alt="Random third slide" class="img-thumbnail embed-responsive-4by3">
+      </div>
+      <div class="carousel-caption">
+        <h3>Engaging multiplayer</h3>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>

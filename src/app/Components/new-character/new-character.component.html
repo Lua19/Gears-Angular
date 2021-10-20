@@ -1,0 +1,18 @@
+<form #CharacterForm="ngForm" (ngSubmit)="conseguirPersonaje(CharacterForm)">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://styles.redditmedia.com/t5_2ruzg/styles/communityIcon_2s67j0ganzi71.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Character name</h5>
+          <input type="text" name="CharacterName" placeholder="His name" ngModel>
+          <p class="card-text">Description</p>
+          <input type="text"name="CharacterDesc" ngModel placeholder="Some quick example text to build on the card title and make up the bulk of the card's content.">
+          <p>Character age</p>
+          <input type="number" name="CharacterAge" ngModel placeholder="50">
+          <p>Character Image URL</p>
+          <input type="text" name="CharacterImage" ngModel placeholder="https://styles.redditmedia.com/t5_2ruzg/styles/communityIcon_2s67j0ganzi71.jpg">
+          <br>
+          <br>
+          <button type="submit" value="submit">Submit</button>
+        </div>
+      </div>
+    </form>

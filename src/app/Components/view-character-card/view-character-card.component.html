@@ -1,0 +1,18 @@
+<form #UpdateForm="ngForm" (ngSubmit)="UpdateCharacter(UpdateForm)">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{personaje.characterImage}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">New character name</h5>
+          <input type="text" name="CharacterName" placeholder="{{personaje.characterName}}" ngModel required [value]="personaje.characterName">
+          <p class="card-text">New description</p>
+          <input type="text"name="CharacterDesc" ngModel placeholder="{{personaje.characterDesc}}" required [value]="personaje.characterDesc">
+          <p>Update character age</p>
+          <input type="number" name="CharacterAge" ngModel placeholder="{{personaje.characterAge}}" required [value]="personaje.characterAge">
+          <p>Character Image URL</p>
+          <input type="text" name="CharacterImage" ngModel placeholder="{{personaje.characterImage}}" required [value]="personaje.characterImage">
+          <br>
+          <br>
+          <button type="submit" value="submit">Submit</button>
+        </div>
+      </div>
+    </form>
